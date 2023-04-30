@@ -23,6 +23,20 @@ The model has to predict some tokens that are masked in the input. It still has 
 # DistilGPT2 Model 
 [DistilGPT2](https://huggingface.co/distilgpt2) is an English-language model pre-trained with the supervision of the 124 million parameter version of GPT-2. DistilGPT2, which has 82 million parameters, was developed using knowledge distillation and was designed to be a faster, lighter version of GPT-2.
 
+# CLM Training 
+**NOTE** If u are using free version of colab just like me u won't be able to complete training as it will take around 21 hours and the session will time out after just 12 hours, but when using colab pro u will finish training in about 10 hours.
+
+But don't worry about the output cause after finishing training you will get the following : 
+<img src="https://user-images.githubusercontent.com/85394315/235381575-9a3e8659-8db4-49ea-a55a-69cc2109fd6b.png">
+
+for perplexity which is a measurement of how well a probability model predicts a sample. In the context of Natural Language Processing, perplexity is one way to evaluate language models. 
+```
+import math
+eval_results = trainer.evaluate()
+print(f"Perplexity: {math.exp(eval_results['eval_loss']):.2f}")
+```
+U will get perplexity of 38.17
+
 
 
 
