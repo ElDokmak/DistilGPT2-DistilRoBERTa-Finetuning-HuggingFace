@@ -11,7 +11,7 @@ notebook_login()
 
   ----------------------------------
   
-# Fine Tunining Large Language Model
+# Fine Tunining Language Model
 In this notebook, we'll see how to fine-tune one of the 🤗 [Transformers](https://github.com/huggingface/transformers) model on a language modeling tasks on the wikitext 2 dataset. We will cover two types of language modeling tasks which are:
 
 ## First : Causal language modeling (CLM) 
