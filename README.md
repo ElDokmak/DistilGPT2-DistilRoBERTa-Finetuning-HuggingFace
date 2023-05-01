@@ -21,7 +21,7 @@ The model has to predict the next token in the sentence (so the labels are the s
 ### DistilGPT2
 [DistilGPT2](https://huggingface.co/distilgpt2) (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2). Like GPT-2, DistilGPT2 can be used to generate text. Users of this model card should also consider information about the design, training, and limitations of GPT-2.
 
-## second : Masked language modeling (MLM) 
+## Second : Masked language modeling (MLM) 
 The model has to predict some tokens that are masked in the input. It still has access to the whole sentence, so it can use the tokens before and after the tokens masked to predict their value.
   
 <img src="https://raw.githubusercontent.com/huggingface/notebooks/463fe54d5c4effc6fdff3836653d45fbf967f7d3/examples/images/masked_language_modeling.png">
@@ -34,7 +34,7 @@ The model has 6 layers, 768 dimension and 12 heads, totalizing 82M parameters (c
   
   
   
-# CLM Training 
+# First : CLM Training 
 **NOTE** If u are using free version of colab just like me u won't be able to complete training as it will take around 21 hours and the session will time out after just 12 hours, but when using colab pro u will finish training in about 10 hours.
 
 But don't worry about the output cause after finishing training you will get the following : 
@@ -48,7 +48,7 @@ print(f"Perplexity: {math.exp(eval_results['eval_loss']):.2f}")
 ```
 U will get perplexity of 38.17
 
-# MLM Training 
+# Second : MLM Training 
 After training u will get the following values : 
 
 <img src="https://user-images.githubusercontent.com/85394315/235544854-cb266114-0ba7-4008-8575-17ec2863c018.png">
