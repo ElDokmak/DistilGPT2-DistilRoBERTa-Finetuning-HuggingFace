@@ -18,8 +18,8 @@ The model has to predict the next token in the sentence (so the labels are the s
 <img src="https://raw.githubusercontent.com/huggingface/notebooks/463fe54d5c4effc6fdff3836653d45fbf967f7d3/examples/images/causal_language_modeling.png">
   
 ### For CLM we gonna use **DistilGPT2** 
-### **DistilGPT2** 
-DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2). Like GPT-2, DistilGPT2 can be used to generate text. Users of this model card should also consider information about the design, training, and limitations of GPT-2.
+### DistilGPT2
+[DistilGPT2](https://huggingface.co/distilgpt2) (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2). Like GPT-2, DistilGPT2 can be used to generate text. Users of this model card should also consider information about the design, training, and limitations of GPT-2.
 
 ## second : Masked language modeling (MLM) 
 The model has to predict some tokens that are masked in the input. It still has access to the whole sentence, so it can use the tokens before and after the tokens masked to predict their value.
@@ -28,7 +28,7 @@ The model has to predict some tokens that are masked in the input. It still has 
 
 ### For CLM we gonna use DistilRoBERTa
 ### DistilRoBERTa
-This model is a distilled version of the RoBERTa-base model. It follows the same training procedure as DistilBERT. The code for the distillation process can be found here. This model is case-sensitive: it makes a difference between english and English.
+[DistilRoBERTa](https://huggingface.co/distilroberta-base) is a distilled version of the RoBERTa-base model. It follows the same training procedure as DistilBERT. The code for the distillation process can be found here. This model is case-sensitive: it makes a difference between english and English.
   
 The model has 6 layers, 768 dimension and 12 heads, totalizing 82M parameters (compared to 125M parameters for RoBERTa-base). On average DistilRoBERTa is twice as fast as Roberta-base.
   
